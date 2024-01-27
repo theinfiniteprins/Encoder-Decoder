@@ -1,4 +1,4 @@
-function randi() {
+function rand() {
     return Math.floor(Math.random() * 1000); 
 }
 
@@ -39,7 +39,7 @@ function encode(s, resultElement) {
     parity = parity % 26;
     let c = String.fromCharCode('a'.charCodeAt(0) + parity);
     ans += c;
-    let random = randi() % 5;
+    let random = rand() % 5;
     if (random === 0) {
         ans += "x";
         for (let i = 0; i < s.length; i++) {
